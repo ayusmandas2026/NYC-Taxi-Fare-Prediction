@@ -1,0 +1,7 @@
+Model,Dataset,Loss/Objective,MAE,RMSE,R2
+Linear Regression,Validation,OLS,2.4256,5.1459,0.7219
+Initial DNN (MSE),Validation,MSE,1.8537,3.9791,0.8337
+DNN (MSE),Validation,MSE,1.8227,3.8551,0.8439
+DNN (MAE),Validation,MAE,1.6228,4.2061,0.8142
+DNN (Huber),Validation,Huber,1.6327,4.1713,0.8173
+Final DNN,Test (Held-Out),MSE,1.8705,4.6504,0.7804

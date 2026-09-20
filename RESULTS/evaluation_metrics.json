@@ -1,0 +1,114 @@
+{
+    "models_comparison": [
+        {
+            "Model": "Linear Regression",
+            "Dataset": "Validation",
+            "Loss/Objective": "OLS",
+            "MAE": 2.4256,
+            "RMSE": 5.1459,
+            "R2": 0.7219
+        },
+        {
+            "Model": "Initial DNN (MSE)",
+            "Dataset": "Validation",
+            "Loss/Objective": "MSE",
+            "MAE": 1.8537,
+            "RMSE": 3.9791,
+            "R2": 0.8337
+        },
+        {
+            "Model": "DNN (MSE)",
+            "Dataset": "Validation",
+            "Loss/Objective": "MSE",
+            "MAE": 1.8227,
+            "RMSE": 3.8551,
+            "R2": 0.8439
+        },
+        {
+            "Model": "DNN (MAE)",
+            "Dataset": "Validation",
+            "Loss/Objective": "MAE",
+            "MAE": 1.6228,
+            "RMSE": 4.2061,
+            "R2": 0.8142
+        },
+        {
+            "Model": "DNN (Huber)",
+            "Dataset": "Validation",
+            "Loss/Objective": "Huber",
+            "MAE": 1.6327,
+            "RMSE": 4.1713,
+            "R2": 0.8173
+        },
+        {
+            "Model": "Final DNN",
+            "Dataset": "Test (Held-Out)",
+            "Loss/Objective": "MSE",
+            "MAE": 1.8705,
+            "RMSE": 4.6504,
+            "R2": 0.7804
+        }
+    ],
+    "hyperparameter_tuning": [
+        {
+            "Configuration": "Baseline",
+            "Hidden Layers": "[128, 64, 32]",
+            "Learning Rate": 0.001,
+            "Batch Size": 1024,
+            "Epochs": 30,
+            "MAE": 1.8472,
+            "RMSE": 3.8719,
+            "R2": 0.8426,
+            "Training Time (s)": 36.49
+        },
+        {
+            "Configuration": "Higher Learning Rate",
+            "Hidden Layers": "[128, 64, 32]",
+            "Learning Rate": 0.003,
+            "Batch Size": 1024,
+            "Epochs": 30,
+            "MAE": 1.7844,
+            "RMSE": 3.9855,
+            "R2": 0.8332,
+            "Training Time (s)": 30.56
+        },
+        {
+            "Configuration": "Lower Learning Rate",
+            "Hidden Layers": "[128, 64, 32]",
+            "Learning Rate": 0.0003,
+            "Batch Size": 1024,
+            "Epochs": 30,
+            "MAE": 1.9347,
+            "RMSE": 4.04,
+            "R2": 0.8286,
+            "Training Time (s)": 31.42
+        },
+        {
+            "Configuration": "Smaller Batch",
+            "Hidden Layers": "[128, 64, 32]",
+            "Learning Rate": 0.001,
+            "Batch Size": 512,
+            "Epochs": 30,
+            "MAE": 1.8218,
+            "RMSE": 3.9957,
+            "R2": 0.8323,
+            "Training Time (s)": 46.04
+        },
+        {
+            "Configuration": "Larger Network",
+            "Hidden Layers": "[256, 128, 64]",
+            "Learning Rate": 0.001,
+            "Batch Size": 1024,
+            "Epochs": 30,
+            "MAE": 1.7432,
+            "RMSE": 4.0256,
+            "R2": 0.8298,
+            "Training Time (s)": 56.96
+        }
+    ],
+    "final_test_metrics": {
+        "MAE": 1.8705,
+        "RMSE": 4.6504,
+        "R2": 0.7804
+    }
+}

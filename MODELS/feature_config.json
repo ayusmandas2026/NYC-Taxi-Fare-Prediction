@@ -1,0 +1,16 @@
+{
+    "features": [
+        "pickup_longitude",
+        "pickup_latitude",
+        "dropoff_longitude",
+        "dropoff_latitude",
+        "passenger_count",
+        "distance_km",
+        "year",
+        "month",
+        "day",
+        "hour",
+        "day_of_week"
+    ],
+    "target": "fare_amount"
+}

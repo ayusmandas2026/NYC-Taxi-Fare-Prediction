@@ -1,0 +1,6 @@
+Configuration,Hidden Layers,Learning Rate,Batch Size,Epochs,MAE,RMSE,R2,Training Time (s)
+Baseline,"[128, 64, 32]",0.001,1024,30,1.8472,3.8719,0.8426,36.49
+Higher Learning Rate,"[128, 64, 32]",0.003,1024,30,1.7844,3.9855,0.8332,30.56
+Lower Learning Rate,"[128, 64, 32]",0.0003,1024,30,1.9347,4.04,0.8286,31.42
+Smaller Batch,"[128, 64, 32]",0.001,512,30,1.8218,3.9957,0.8323,46.04
+Larger Network,"[256, 128, 64]",0.001,1024,30,1.7432,4.0256,0.8298,56.96
